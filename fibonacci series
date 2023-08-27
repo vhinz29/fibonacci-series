@@ -1,0 +1,10 @@
+fiboseries = []
+total = 0
+for x in range(15):
+    if x <= 1:
+        fiboseries.append(x)
+    else:
+        total = fiboseries[-1] + fiboseries[-2]
+        fiboseries.append(total)
+
+print("fiboncci:>", fiboseries)
